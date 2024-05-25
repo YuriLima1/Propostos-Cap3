@@ -10,15 +10,21 @@
         font-weight: 546;
     }
     h1 {
-        font-size: 2.5em;
+        font-size: 2em;
         color: #764e36;
+        font-weight: bold;
         margin: 13px;
+        margin-top: 2px; /* Menor margem superior */
+        margin-bottom: 10px;
     }
     h2 {
-        font-size: 1.35em;
+        font-size: 1.30em;
+        font-weight: bold;
         color: #fcfcfc;
         background-color: #764e36;
         margin: 13px;
+        padding: 3px;
+        margin-left: 13px;
     }
     p {
         font-size: 1.1em;
@@ -28,12 +34,12 @@
     }
     hr {
         border: 0;
-        height: 2.5px;
+        height: 3.5px;
         background: transparent;
         position: relative;
         margin: -3px;
-        margin-bottom: -13px;
-        margin-top: -5px;
+        margin-top: -7px;
+        margin-bottom: 2px;
         text-indent: 1em;
     }
     hr::before { 
@@ -48,6 +54,15 @@
             transparent 10px
         );
     }
+    .container {
+            display: inline-block;
+            padding: 2px;
+            border: 4px solid #764e36;
+            margin-left: 12px;
+    }
+    .container img {
+            display: block;
+    }
 </style>
 </head>
 <body>
@@ -58,14 +73,15 @@
 <p>Nossos estudos começaram falando a respeito de um item muito sério que é a organização. Isso porque a linguagem HTML é responsável apenas pela marcação dos elementos na janela do navegador. O HTML não cria nada, ele manda buscar ou utiliza as letrinhas que você digita. </p>
 
 <h2>Parágrafos</h2>
-
+<div class="container">
 <p><img src="ilustra1.jpg" alt="foto de livro com textos"></p>
-
+</div>
 <p>Para colocarmos parágrafos, usamos os elementos "p" e "/p". Para fazer uma quebra de linha, mantendo o mesmo parágrafo, usamos o elemento "br". Temos ainda parágrafos especiais, denominados títulos, cabeçalhos ou headings em que são usados elementos de "h1" a "h6" e seus respectivos fechamentos de "/h1" a "/h6".</p>
 
 <h2>Imagens</h2>
-
+<div class="container">
 <p><img src="ilustra2.jpg" alt="foto de livro com imagem"></p>
+</div>
 <p>Uma imagem aparece na janela do navegador pelo uso do elemento "img". Esse elemento possui o atributo "src", responsável pela localização da imagem. Para trabalhar melhor com a imagem, você pode colocá-la dentro das tags de marcação de parágrafo.</p>
 
 </body>
